@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carbon Footprint Awareness Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Carbon Footprint Calculator</h1>
 
+        <input type="number" id="travel" placeholder="Travel Distance (km)">
+        <input type="number" id="electricity" placeholder="Electricity Usage (kWh)">
+        <input type="number" id="waste" placeholder="Waste Generated (kg)">
+
+        <select id="food">
+            <option value="2">Vegetarian</option>
+            <option value="5">Non-Vegetarian</option>
+        </select>
+
+        <button onclick="calculate()">Calculate</button>
+
+        <h2 id="result"></h2>
+
+        <div id="tips"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
