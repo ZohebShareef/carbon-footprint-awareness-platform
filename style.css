@@ -1,19 +1,49 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f8f4;
-    text-align: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #22c55e,
+    #3b82f6
+  );
+  min-height: 100vh;
 }
 
 .container {
-    width: 400px;
-    margin: 50px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
-input, select, button {
-    width: 90%;
-    padding: 10px;
-    margin: 10px;
+.card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 25px;
+  color: white;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 12px;
+  background: #facc15;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
 }
