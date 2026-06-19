@@ -1,19 +1,19 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f8f4;
-    text-align: center;
-}
+function calculate() {
+    let travel = Number(document.getElementById("travel").value);
+    let electricity = Number(document.getElementById("electricity").value);
+    let waste = Number(document.getElementById("waste").value);
+    let food = Number(document.getElementById("food").value);
 
-.container {
-    width: 400px;
-    margin: 50px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-}
+    let total =
+        (travel * 0.21) +
+        (electricity * 0.82) +
+        (waste * 0.5) +
+        food;
 
-input, select, button {
-    width: 90%;
-    padding: 10px;
-    margin: 10px;
+    document.getElementById("result").innerHTML =
+        "Estimated CO₂ Footprint: " + total.toFixed(2) + " kg";
+
+    document.getElementById("tips").innerHTML =
+        "<h3>Suggestions</h3>" +
+        "<p>Use public transport, reduce electricity consumption, recycle waste, and choose sustainable food options.</p>";
 }
